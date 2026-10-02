@@ -1,9 +1,11 @@
 # 02-Full Body Reference — FX-TRADER-01
 
-Place approved full-body reference images here.
-These establish height impression, body proportions, shoulder width, clothing fit and posture.
+**Status: APPROVED** (2026-10-02)
 
-Existing candidate (old path):
-- assets/character/FX-TRADER-01/master-reference/FX-TRADER-01_full_body_reference_20261001_v01.png.png
+Confirms height impression, body proportions, shoulder width, clothing fit and posture.
 
-Move here after identity review passes.
+### Current approved file (legacy path)
+`../master-reference/FX-TRADER-01_full_body_reference_20261001_v01.png.png`
+
+### Target clean name (when binary is moved)
+`FX-TRADER-01_full_body_reference_20261001_v01.png`

@@ -8,9 +8,10 @@
 
 ## Status
 
-**ACTIVE — IDENTITY LOCKED**
+**OFFICIALLY LOCKED — 2026-10-02**
 
-Any image that fails the checklist below must be rejected.
+Master Reference, Full-body Reference and Lifestyle Reference are now approved.
+Any future image that fails the checklist below must be rejected.
 
 ## Locked Identity (do not change)
 
@@ -26,6 +27,16 @@ Any image that fails the checklist below must be rejected.
 - Approximately 180 cm
 - Healthy, moderately athletic build with naturally broad shoulders
 - Looks like a successful professional in his early 30s — not a fashion model or fitness influencer
+
+## Approved Reference Images (current)
+
+| Role | File (current location) |
+|------|-------------------------|
+| Master Reference (primary face lock) | `master-reference/FX-TRADER-01_master_reference_20260928_v01.jpg.png` |
+| Full-body Reference | `master-reference/FX-TRADER-01_full_body_reference_20261001_v01.png.png` |
+| Lifestyle Reference | `master-reference/FX-TRADER-01_lifestyle_reference_20261001_v01.png.png` |
+
+> Note: Binary files remain in the legacy `master-reference/` folder for safety. Clean rename/move into the numbered folders (01 / 02 / 03) can be performed later without changing identity.
 
 ## Stable Identity Block (copy exactly into every prompt)
 
@@ -71,7 +82,7 @@ extra limbs, deformed hands, distorted proportions
 
 ## Folder Rules
 
-- `01-master-reference/` — only the single approved primary identity image
+- `01-master-reference/` — single primary approved identity image (target location)
 - `02-full-body-reference/` — full-body shots that confirm proportions
 - `03-lifestyle-reference/` — natural non-portrait scenes that still lock identity
 - `04-expression-sheet/` — limited approved expressions only
