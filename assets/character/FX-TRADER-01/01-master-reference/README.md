@@ -1,12 +1,16 @@
 # 01-Master Reference — FX-TRADER-01
 
-This folder must contain exactly one primary approved Master Reference image.
+**Status: APPROVED** (2026-10-02)
 
-Current candidate (still under the old path):
-- assets/character/FX-TRADER-01/master-reference/FX-TRADER-01_master_reference_20260928_v01.jpg.png
+Primary identity anchor for all future generations.
 
-After final approval:
-1. Move/rename the image into this folder with clean name:
-   FX-TRADER-01_master_reference_20260928_v01.jpg
-2. Update CHARACTER-LOCK.md if needed.
-3. Never overwrite without version bump and explicit approval.
+### Current approved file (legacy path)
+`../master-reference/FX-TRADER-01_master_reference_20260928_v01.jpg.png`
+
+### Target clean name (when binary is moved)
+`FX-TRADER-01_master_reference_20260928_v01.jpg`
+
+Rules:
+- Only one primary Master Reference may exist.
+- Never overwrite without version bump and explicit approval.
+- Always load this image as Character Reference / Face Lock / IP-Adapter when generating new scenes.

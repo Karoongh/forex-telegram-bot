@@ -1,8 +1,11 @@
 # 03-Lifestyle Reference — FX-TRADER-01
 
-Natural non-portrait scenes that still lock the same identity.
+**Status: APPROVED** (2026-10-02)
 
-Existing candidate (old path):
-- assets/character/FX-TRADER-01/master-reference/FX-TRADER-01_lifestyle_reference_20261001_v01.png.png
+Natural non-portrait scene that still locks the same identity.
 
-Move here after identity review passes.
+### Current approved file (legacy path)
+`../master-reference/FX-TRADER-01_lifestyle_reference_20261001_v01.png.png`
+
+### Target clean name (when binary is moved)
+`FX-TRADER-01_lifestyle_reference_20261001_v01.png`
