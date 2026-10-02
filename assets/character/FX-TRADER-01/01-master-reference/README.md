@@ -4,10 +4,7 @@
 
 Primary identity anchor for all future generations.
 
-### Current approved file (legacy path)
-`../master-reference/FX-TRADER-01_master_reference_20260928_v01.jpg.png`
-
-### Target clean name (when binary is moved)
+### File
 `FX-TRADER-01_master_reference_20260928_v01.jpg`
 
 Rules:

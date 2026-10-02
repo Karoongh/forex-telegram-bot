@@ -1,15 +1,11 @@
 # Legacy Master Reference Folder
 
-**Status: LEGACY – SOURCE OF APPROVED ASSETS**
+**Status: LEGACY**
 
-The three images in this folder have been formally approved as:
+The three approved reference images should be moved to:
 
-1. Master Reference (face identity lock)
-2. Full-body Reference
-3. Lifestyle Reference
+- `01-master-reference/FX-TRADER-01_master_reference_20260928_v01.jpg`
+- `02-full-body-reference/FX-TRADER-01_full_body_reference_20261001_v01.png`
+- `03-lifestyle-reference/FX-TRADER-01_lifestyle_reference_20261001_v01.png`
 
-They are referenced by the new structure under `01-`, `02-` and `03-` folders.
-
-Clean rename and move into the numbered folders can be performed later without changing the locked identity.
-
-Do not delete these files until the move is complete and verified.
+After the move this folder can remain empty or be removed.

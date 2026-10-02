@@ -4,8 +4,5 @@
 
 Natural non-portrait scene that still locks the same identity.
 
-### Current approved file (legacy path)
-`../master-reference/FX-TRADER-01_lifestyle_reference_20261001_v01.png.png`
-
-### Target clean name (when binary is moved)
+### File
 `FX-TRADER-01_lifestyle_reference_20261001_v01.png`

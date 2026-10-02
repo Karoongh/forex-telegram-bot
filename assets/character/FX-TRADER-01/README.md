@@ -6,20 +6,20 @@ This folder follows the character-identity-lock standard.
 
 **IDENTITY OFFICIALLY LOCKED**
 
-- Master Reference: APPROVED
-- Full-body Reference: APPROVED
-- Lifestyle Reference: APPROVED
+- Master Reference: APPROVED → `01-master-reference/`
+- Full-body Reference: APPROVED → `02-full-body-reference/`
+- Lifestyle Reference: APPROVED → `03-lifestyle-reference/`
 
 ## Structure
 
 - `00-identity-lock/` — strict rules, stable prompt block, checklist
-- `01-master-reference/` — single primary identity image (target)
+- `01-master-reference/` — single primary identity image
 - `02-full-body-reference/`
 - `03-lifestyle-reference/`
 - `04-expression-sheet/`
 - `05-clothing-variants/`
 - `approved-production/` — only checklist-passed images
-- `master-reference/` — legacy location of the three approved binary images
+- `master-reference/` — legacy
 
 ## Source of Truth
 

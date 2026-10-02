@@ -4,8 +4,5 @@
 
 Confirms height impression, body proportions, shoulder width, clothing fit and posture.
 
-### Current approved file (legacy path)
-`../master-reference/FX-TRADER-01_full_body_reference_20261001_v01.png.png`
-
-### Target clean name (when binary is moved)
+### File
 `FX-TRADER-01_full_body_reference_20261001_v01.png`
