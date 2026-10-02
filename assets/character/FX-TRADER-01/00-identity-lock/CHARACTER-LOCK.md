@@ -4,14 +4,15 @@
 > This file is the operational enforcement document. It works together with:
 > - docs/BRAND-VISUAL-IDENTITY.md (source of truth for appearance)
 > - docs/IMAGE-GENERATION-WORKFLOW.md (how to generate)
+> - TRADING-SCREEN-RULES.md (monitor / phone chart accuracy)
 > - the character-identity-lock skill
+> - the trading-screen-accuracy skill
 
 ## Status
 
 **OFFICIALLY LOCKED — 2026-10-02**
 
 Master Reference, Full-body Reference and Lifestyle Reference are approved.
-
 Any future image that fails the checklist below must be rejected.
 
 ## Locked Identity (do not change)
@@ -36,8 +37,6 @@ Any future image that fails the checklist below must be rejected.
 | Master Reference (primary face lock) | `01-master-reference/FX-TRADER-01_master_reference_20260928_v01.jpg` |
 | Full-body Reference | `02-full-body-reference/FX-TRADER-01_full_body_reference_20261001_v01.png` |
 | Lifestyle Reference | `03-lifestyle-reference/FX-TRADER-01_lifestyle_reference_20261001_v01.png` |
-
-> If the files are still under the legacy `master-reference/` folder with double extensions, move/rename them to the paths above.
 
 ## Stable Identity Block (copy exactly into every prompt)
 
@@ -81,6 +80,15 @@ model-like face, perfect symmetry, beauty filter, plastic skin,
 extra limbs, deformed hands, distorted proportions
 ```
 
+## Trading Screens
+
+When any monitor or phone is visible, the rules in **TRADING-SCREEN-RULES.md** are mandatory.
+
+Order of checks:
+1. Identity Lock (this file)
+2. Trading Screen Accuracy (TRADING-SCREEN-RULES.md)
+3. Physical Realism & Scene Logic
+
 ## Folder Rules
 
 - `01-master-reference/` — single primary approved identity image
@@ -89,7 +97,7 @@ extra limbs, deformed hands, distorted proportions
 - `04-expression-sheet/` — limited approved expressions only
 - `05-clothing-variants/` — approved clothing looks
 - `approved-production/` — only images that passed the full checklist
-- `master-reference/` — legacy (should be empty after cleanup)
+- `master-reference/` — legacy
 
 ## Change Control
 
