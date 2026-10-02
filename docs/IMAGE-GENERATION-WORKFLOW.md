@@ -624,18 +624,20 @@ PERFECT + ARTIFICIAL
 
 Use a predictable naming convention.
 
-Recommended structure:
+Recommended structure (current):
 
 ```
 assets/
 └── character/
     └── FX-TRADER-01/
-        ├── master-reference/
-        ├── portraits/
-        ├── lifestyle/
-        ├── trading/
-        ├── educational/
-        └── community/
+        ├── 00-identity-lock/
+        ├── 01-master-reference/
+        ├── 02-full-body-reference/
+        ├── 03-lifestyle-reference/
+        ├── 04-expression-sheet/
+        ├── 05-clothing-variants/
+        ├── approved-production/
+        └── master-reference/   # legacy
 ```
 
 Recommended filename:
@@ -850,92 +852,55 @@ When generating with ChatGPT:
 
 1. Use the approved FX-TRADER-01 reference image when available.
 2. Use the stable identity specification from the GitHub documentation.
-3. Give ChatGPT a clear scene brief.
-4. Request photorealistic real-world photography.
-5. Preserve natural behavior, lighting and physically plausible shadows.
-6. Generate only when the scene has a defined purpose.
-7. Review the result using the checklist.
-8. If rejected, identify the specific failure before generating again.
-9. Do not change multiple unrelated variables at once when troubleshooting identity drift.
-10. Keep the approved reference as the identity anchor for future generations.
-
-When image-generation capacity is limited, prioritize reference quality and important production assets over experimental variations.
+3. Prefer the two-layer approach (stable identity + variable scene).
+4. Review every candidate against the Identity Checklist.
+5. Reject identity drift even if the scene is attractive.
 
 ---
 
-## 21. Handoff Procedure for Team Members
+## 21. Common Failure Modes and Fixes
 
-A new team member should be able to start with these files:
-
-```
-docs/BRAND-VISUAL-IDENTITY.md
-docs/IMAGE-GENERATION-WORKFLOW.md
-```
-
-Then:
-
-1. Read the Brand Visual Identity document.
-2. Read this workflow.
-3. Locate the current approved FX-TRADER-01 master reference.
-4. Review recent approved images.
-5. Prepare a Standard Scene Brief.
-6. Build the prompt using the two-layer system.
-7. Generate.
-8. Run the review checklist.
-9. Store approved assets using the naming convention.
-10. Record any master-reference change explicitly.
-
-No team member should redefine the character from memory.
-
----
-
-## 22. Common Failure Modes
-
-### Failure: Character drift
+### Failure: Face changes between images
 
 Cause:
-- No reference image
-- Too much variation in identity description
-- Changing age or facial features
-- Tool limitations
+- Text-only prompting without a strong reference image
+- Weak reference strength
+- Rewriting the identity description from scratch
 
 Fix:
-- Reuse the approved master reference
-- Keep the Stable Identity layer unchanged
-- Reduce unnecessary identity wording changes
+- Always load the Master Reference
+- Keep the Stable Identity block fixed
+- Increase character-reference strength if the tool allows
 
-### Failure: AI-perfect face
+### Failure: Body proportions drift
 
 Cause:
-- Excessive beauty language
-- Studio/commercial style
-- Over-retouching
+- Missing full-body reference
+- Scene-driven generation that prioritizes composition over identity
 
 Fix:
-- Reinforce natural skin, asymmetry and documentary photography.
+- Use the approved Full-body Reference when body is visible
+- Explicitly require the same body proportions in the prompt
 
-### Failure: Unrealistic shadows
+### Failure: Plastic / model look
 
 Cause:
-- Multiple artificial light sources
-- Cinematic lighting
-- Weak physical-light description
+- Beauty-filter language or high aesthetic strength
+- Missing realism constraints
 
 Fix:
-- Specify the real light source and require physically consistent shadows.
+- Emphasize natural skin, pores, asymmetry and photographic imperfections
 
-### Failure: Luxury influencer look
+### Failure: Luxury or get-rich-quick signaling
 
 Cause:
-- Expensive cars
-- Luxury interiors
-- Designer clothing
-- Cash/profit imagery
+- Props or environments that imply unrealistic wealth
 
 Fix:
-- Return to the successful-but-relatable lifestyle rules.
+- Keep environments professional and lived-in
+- Avoid supercars, private jets, cash, champagne, etc.
 
-### Failure: Posed advertisement
+### Failure: Posed advertisement look
 
 Cause:
 - Direct camera stare
@@ -953,7 +918,7 @@ Fix:
 
 ---
 
-## 23. Brand Credibility and Compliance
+## 22. Brand Credibility and Compliance
 
 The fictional character is a visual asset, not evidence of trading performance.
 
@@ -970,6 +935,12 @@ Images must not be used to imply:
 Actual financial claims should be supported separately by appropriate documentation, disclosures and factual evidence.
 
 The character should remain clearly fictional within the project's internal asset system.
+
+---
+
+## 23. Brand Credibility and Compliance
+
+(See section above — retained for continuity.)
 
 ---
 
@@ -1001,31 +972,35 @@ If a change is needed:
 
 ## 25. Current Implementation Status
 
-Current status:
+Current status (updated 2026-10-02):
 
 ```
 DOCUMENTATION: READY
 CHARACTER SPECIFICATION: DEFINED
 GENERATION WORKFLOW: DEFINED
-MASTER CHARACTER REFERENCE: NOT YET APPROVED
-PRODUCTION ASSET LIBRARY: NOT YET ESTABLISHED
+MASTER CHARACTER REFERENCE: APPROVED AND LOCKED
+FULL-BODY REFERENCE: APPROVED
+LIFESTYLE REFERENCE: APPROVED
+IDENTITY LOCK: OFFICIALLY ACTIVE
+PRODUCTION ASSET LIBRARY: READY TO START
 ```
+
+### Approved reference locations
+
+- Master: `assets/character/FX-TRADER-01/01-master-reference/FX-TRADER-01_master_reference_20260928_v01.jpg`
+- Full-body: `assets/character/FX-TRADER-01/02-full-body-reference/FX-TRADER-01_full_body_reference_20261001_v01.png`
+- Lifestyle: `assets/character/FX-TRADER-01/03-lifestyle-reference/FX-TRADER-01_lifestyle_reference_20261001_v01.png`
+
+### Operational lock document
+
+`assets/character/FX-TRADER-01/00-identity-lock/CHARACTER-LOCK.md`
 
 ### Immediate next milestone
 
-Create the first official:
+Begin production scenes under the character-identity-lock rules.
 
-```
-FX-TRADER-01 — Master Character Reference
-```
-
-Then create:
-
-1. Full-body reference
-2. Natural lifestyle reference
-3. First production scene
-
-Only after the master identity is approved should the project scale image production.
+Always load the Master Reference as the primary identity anchor.
+Reject any image that fails the Identity Review Checklist.
 
 ---
 
