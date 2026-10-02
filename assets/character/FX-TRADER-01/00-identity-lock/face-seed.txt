@@ -1,0 +1,6 @@
+# Optional fixed parameters for identity consistency
+# Fill with tool-specific values after first successful locked generations
+# Example:
+# seed: 123456789
+# face_strength: 0.85
+# ip_adapter_scale: 0.7
